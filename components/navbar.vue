@@ -1,9 +1,9 @@
 <template>
-  <b-navbar class="row" toggleable="md">
+  <b-navbar class="row" toggleable="lg">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand class="col-sm-6" to="/pacinis">Pacini's Italian Bar and Grill</b-navbar-brand>
+    <b-navbar-brand class="col-sm-7" to="/pacinis"><div id="header"><div id="paciniH">Pacini's</div>  Italian Bar and Grill</div></b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
 
@@ -40,9 +40,12 @@
   }
 
 </script>
-<style>
+<style >
+@import url('https://fonts.googleapis.com/css?family=Italianno|Open+Sans');
   .navbar {
-    background-color: rgba(93, 165, 26, 0.295);
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding-right: 100px;
   }
 
   .nav-link {
@@ -51,9 +54,25 @@
   }
 
   .navbar-brand {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 .nav-item{
     padding: 15px;
+}
+#header{
+    color: rgb(170, 30, 30);
+    font-family: 'Italianno', cursive;
+    -webkit-font-smoothing: antialiased;
+    
+}
+#paciniH{
+    color: black;
+    font-size: 1.3em;
+    display: inline-flex;
+}
+@media only screen and (max-width: 740px) {
+    .navbar {
+        font-size: 0.55em;
+    }
 }
 </style>
