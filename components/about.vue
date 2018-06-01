@@ -1,4 +1,6 @@
 <template>
+
+    
     <div>
         <div id="panel1" class="row">
       <div id="text" class="col-sm-9">
@@ -18,20 +20,25 @@
       </div>
 
     </div>
+    
     </div>
 </template>
 <script>
-import navbar from '~/components/navbar.vue'
+
 
 export default {
-    components:{
-        navbar
-    }
+  
 }
 </script>
 <style>
 #panel1{
     text-align: center;
+}
+h2{
+  font-size: 3em;
+}
+P{
+  font-size: 2.3em;
 }
 </style>
 

@@ -1,5 +1,6 @@
 <template>
-<div><b-navbar class="row" toggleable="lg">
+<div>
+  <b-navbar class="row" toggleable="lg">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -12,16 +13,23 @@
 
 
         <b-navbar-nav>
-          <b-nav-item to="/about">About</b-nav-item>
+          <b-nav-item to="/aboutPage">About</b-nav-item>
 
    <b-nav-item to="/location">Location</b-nav-item>
 
           <b-nav-item-dropdown text="Menus">
-            <b-nav-item to="/menus">Main Menu</b-nav-item>
+            <div id="dropDown">
+<nuxt-link to='/menus'>Main Menu</nuxt-link>  <br>
+<nuxt-link to='/menus'>Daily Specials</nuxt-link> <br> 
+<nuxt-link to='/menus'>Open Bar</nuxt-link>  <br>
+<nuxt-link to='/menus'>Desserts</nuxt-link>  <br>
+<nuxt-link to='/menus'>Kids Menu</nuxt-link>  
+</div>
+            <!-- <b-nav-item to="/menus">Main Menu</b-nav-item>
             <b-nav-item to="/menus">Daily Specials</b-nav-item>
             <b-nav-item to="/menus">Open Bar</b-nav-item>
             <b-nav-item to="/menus">Desserts</b-nav-item>
-            <b-nav-item to="/meuns">Kids Menu</b-nav-item>
+            <b-nav-item to="/meuns">Kids Menu</b-nav-item> -->
           </b-nav-item-dropdown>
 
 
@@ -51,12 +59,19 @@
     margin: 0 auto;
     padding-right: 100px;
   }
-
+.dropdown-menu{
+  text-decoration: none;
+  font-size: 2em;
+}
   .nav-link {
     font-size: 2em;
     border-radius: 10px;
   }
+ #dropDown a{
+    color: black;
+    width: 150px;
 
+ }
   .navbar-brand {
     font-size: 3.5em;
   }
