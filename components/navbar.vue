@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="row" toggleable="lg">
+<div><b-navbar class="row" toggleable="lg">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -12,16 +12,16 @@
 
 
         <b-navbar-nav>
-          <b-nav-item to="/About">About</b-nav-item>
+          <b-nav-item to="/about">About</b-nav-item>
 
    <b-nav-item to="/location">Location</b-nav-item>
 
           <b-nav-item-dropdown text="Menus">
-            <b-nav-item to="/Menu">Main Menu</b-nav-item>
-            <b-nav-item to="/dailySpecials">Daily Specials</b-nav-item>
-            <b-nav-item to="/bar">Open Bar</b-nav-item>
-            <b-nav-item to="/desserts">Desserts</b-nav-item>
-            <b-nav-item to="/kidsMenu">Kids Menu</b-nav-item>
+            <b-nav-item to="/menus">Main Menu</b-nav-item>
+            <b-nav-item to="/menus">Daily Specials</b-nav-item>
+            <b-nav-item to="/menus">Open Bar</b-nav-item>
+            <b-nav-item to="/menus">Desserts</b-nav-item>
+            <b-nav-item to="/meuns">Kids Menu</b-nav-item>
           </b-nav-item-dropdown>
 
 
@@ -33,6 +33,10 @@
 
     </b-collapse>
   </b-navbar>
+    <div id="greenBanner">
+      <h3>A Taste of Boston's Famous North End</h3>
+    </div>
+    </div>  
 </template>
 <script>
   export default {
@@ -70,9 +74,21 @@
     font-size: 1.3em;
     display: inline-flex;
 }
+#greenBanner{
+  background-color: rgb(57, 124, 12);
+  color: white;
+text-align: right;
+
+}
+
 @media only screen and (max-width: 740px) {
     .navbar {
         font-size: 0.55em;
+    }
+    #greenBanner h3{
+      text-align: center;
+      font-size: 1em;
+      
     }
 }
 </style>
