@@ -35,10 +35,21 @@ export default {
     text-align: center;
 }
 h2{
+  padding-top: 10px;
   font-size: 3em;
 }
 P{
   font-size: 2.3em;
 }
+@media only screen and (max-width: 600px) {
+    #text p{
+      font-size: 1.2em;
+    }
+    #text h2{
+      font-size: 2em;
+    }
+}
+
+
 </style>
 
