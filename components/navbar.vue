@@ -4,7 +4,7 @@
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand class="col-sm-7" to="/pacinis"><div id="header"><div id="paciniH">Pacini's</div>  Italian Bar and Grill</div></b-navbar-brand>
+    <b-navbar-brand class="col-sm-7" to="/"><div id="header"><div id="paciniH">Pacini's</div>  Italian Bar and Grill</div></b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
 
