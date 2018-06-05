@@ -3,6 +3,7 @@
   <navbar/>
   <carousel/>
   <about/>
+  <subscribe/>
   <footerP/>
 </div>
 </template>
@@ -13,6 +14,8 @@ import navbar from '~/components/navbar.vue'
 import carousel from '~/components/carousel.vue'
 import about from '~/components/about.vue'
 import footerP from '~/components/footerP.vue'
+import subscribe from '~/components/subscribe.vue'
+
 
 
 export default {
@@ -22,7 +25,8 @@ export default {
     navbar,
     carousel,
     about,
-    footerP
+    footerP,
+    subscribe
 
   }
  
