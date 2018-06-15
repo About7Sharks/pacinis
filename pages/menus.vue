@@ -3,20 +3,7 @@
 
   <div id="main">
     <navbar/>
-    <b-container>
-      <div class="row">
-            <b-col col="8">Pizza Type</b-col>
-            <b-col col="1">Medium</b-col>
-            <b-col col="1">Large</b-col>
-      </div>
-        <div class="row">
-               <b-col col="8">Mediterranean <br> Spinach, Mushrooms, olives, scallions, geta, ricotta, Parmeasan and Mozzerella cheeses and fresh spices</b-col>
-            <b-col col="1">$12.95</b-col>
-            <b-col col="1">$16.95</b-col>
-
-      </div>
-  
-    </b-container>
+   
 
     <b-container fluid>
 
